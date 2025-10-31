@@ -96,13 +96,13 @@ Each feature screen follows this structure:
 
 ### 3. Powering Data with Retrofit and Hilt
 
-Data is fetched from the [Puerto Rico Government API](https://pr-goverment-api.web.app/) using **Retrofit**, the type-safe HTTP client for Android and Java.
+Data is fetched from the [Puerto Rico Government API](https://pr-government-api.web.app/) using **Retrofit**, the type-safe HTTP client for Android and Java.
 
 - **API Service:** A simple interface defines the API endpoints.
 
   ```kotlin
   interface PuertoRicoApiService {
-      @GET("goverment.json")
+      @GET("government.json")
       suspend fun getGovernmentData(): GovernmentResponse
 
       @GET("municipalities.json")
