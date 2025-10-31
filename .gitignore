@@ -1,34 +1,147 @@
-# Gradle files
-.gradle/
-build/
+# Created by https://www.toptal.com/developers/gitignore/api/android,gradle,kotlin,jetbrain
+# Edit at https://www.toptal.com/developers/gitignore?templates=android,gradle,kotlin,jetbrain
 
-# Local configuration file (sdk path, etc)
-local.properties
+.kotlin
 
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
+### Android ###
+# Built application files
 *.apk
-output-metadata.json
+*.aab
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# RenderScript intermediate files
+*.rs.o
+*.rs.so
+
+# Splash screen files
+*.png.flat
 
 # Keystore files
-*.jks
-*.keystore
+#
+# N.B. You should commit the keystore file used to sign your release builds,
+# but keep it in a secure location. As such, it's recommended that you add it
+# to a second gitignore file, for example .git/info/exclude, which is not
+# under version control.
+#
+# Alternatively, if you're not using a keystore for release builds, you can
+# uncomment the following line.
+# *.jks
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# Android Studio IDE files
+.idea/
+.gradle/
+captures/
+*.iml
+local.properties
+build/
 
-# Android Profiling
+# Profile files
 *.hprof
+
+### Gradle ###
+.gradletasknamecache
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Avoid ignoring Gradle wrapper properties file (wrapper folder might be ignored)
+!gradle-wrapper.properties
+
+# Lockfiles
+# https://docs.gradle.org/current/userguide/dependency_locking.html
+*.lockfile
+
+# Crashlytics plugin
+com_crashlytics_export_strings.xml
+
+### JetBrain ###
+# Covers JetBrains IDEs: IntelliJ IDEA, PhpStorm, PyCharm, RubyMine, WebStorm, and AppCode
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# User-specific stuff
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+
+# Sensitive or high-churn files
+.idea/dataSources.ids
+.idea.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+.idea/dbnavigator.xml
+
+# Gradle
+.idea/gradle.xml
+.idea/libraries
+
+# CMake
+cmake-build-debug/
+cmake-build-release/
+
+# Mongo Explorer
+.idea/mongoSettings.xml
+
+## File-based project format
+*.iws
+
+## Plugin-specific files
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/repl.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+
+# Editor-based Rest Client
+.idea/httpRequests
+
+# Android studio 3.1+
+.idea/caches/
+.idea/navEditor.xml
+
+### Kotlin ###
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Scratches and consoles
+/scratches/
+
+# Various temporary files
+*.swp
+*~
+*DS_Store
+
+# End of https://www.toptal.com/developers/gitignore/api/android,gradle,kotlin,jetbrain
