@@ -22,7 +22,7 @@ import retrofit2.http.GET
 
 interface PuertoRicoApiService {
 
-    @GET("goverment.json")
+    @GET("government.json")
     suspend fun getGovernmentData(): GovernmentResponse
 
     @GET("municipalities.json")

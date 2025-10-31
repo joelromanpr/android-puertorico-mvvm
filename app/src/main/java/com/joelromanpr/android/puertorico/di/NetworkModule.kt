@@ -29,7 +29,7 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
 
-    private const val BASE_URL = "https://pr-goverment-api.web.app/"
+    private const val BASE_URL = "https://pr-government-api.web.app/"
 
     @Singleton
     @Provides
